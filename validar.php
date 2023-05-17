@@ -23,7 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //     exit();
 
 } else {
-    echo "Código inválido!"; // Código inserido está incorreto
+  echo '<script type="text/javascript">
+      window.onload = function () { alert("CÓDIGO INVÁLIDO!"); } 
+      </script>'; // Código inserido está incorreto
   }
 }
 ?>
@@ -31,15 +33,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
   <title>Validar Código</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/styleValidar.css">
 </head>
 <body>
-  <h1>Validar</h1>
+<section class="geral">
+  <h1>Validação do Acesso</h1>
+  <h2>Insira o código para validar o acesso à plataforma Laranjão</h2>
 <!-- Formulário para inserir o código -->
+
+
 <form action="validar.php" method="post">
   <label for="codigoInserido">Insira o código:</label>
-  <input type="text" name="codigoInserido" id="codigoInserido" required><br>
+  <input type="text" name="codigoInserido" id="codigoInserido" class="inputForm" placeholder="Insira o código:" required><br>
   <button type="submit">Verificar Código</button>
+</section>
 </form>
 </body>
 </html>

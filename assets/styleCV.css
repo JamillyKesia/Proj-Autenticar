@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body{
+    background-color: #f7f7f7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fa9500' fill-opacity='0.22'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.geral {
+    background-color: #f7f7f7;
+    border-radius: 49px;
+    position: absolute;
+    width: 25%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-shadow: 2px 2px 20px 0px rgba(80, 80, 80, 0.123);
+}
+
+.geral h1{
+    margin-top: 53px;
+    color: rgb(44, 44, 44);
+}
+
+.geral h2{
+    width: 20rem;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: rgb(95, 95, 95);
+    font-weight: 400;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.geral img{
+    width: 86%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.geral p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fa9500 ;
+}

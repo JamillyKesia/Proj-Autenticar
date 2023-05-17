@@ -37,12 +37,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $mail->isSMTP();
       $mail->Host = 'sandbox.smtp.mailtrap.io';
       $mail->SMTPAuth = true;
-      $mail->Username = 'f0db4d1416142a';
-      $mail->Password = '1945f347ec3905';
+      $mail->Username = 'd6b80ab5135925';
+      $mail->Password = '47490098bd5dff';
       $mail->Port = 2525;
 
       // Configurações do servidor SMTP
-      $mail->setFrom('vocelo2442@appxapi.com');
+      $mail->setFrom('grouptest.dev.br');
       //$mail->addAddress('Teste');
       $mail->addAddress($emailInserido);
     
@@ -80,18 +80,19 @@ function gerarCodigoAleatorio() {
 
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Formulário de Acesso</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/styleHome.css">
 </head>
 <body>
   <section class="geral">
-  <h1>Acesso Lajanrão</h1>
-  <h2>Digite sua senha e seu login para ter acesso a plataforma Lajanrão.</h2><br>
+  <h1>Acesso Laranjão 🍊</h1>
+  <h2>Digite sua senha e seu login para ter acesso a plataforma Laranjão.</h2><br>
   <form method="POST" action="">
-    <label for="email">
+    <label for="email"> <br>
     <input type="email" id="email" name="email" class="inputForm" placeholder="E-mail" required>
     </label><br>
     <label for="login">
@@ -104,9 +105,11 @@ function gerarCodigoAleatorio() {
     <input type="submit" value="Entrar">
   </form>
   </section>
-  <br>
+  <section class="sessaoDados">
   Login Correto: <strong>UserTest</strong>
   <br>
   Senha Correta: <strong>senha123</strong>
+  </section>
 </body>
 </html>
+
