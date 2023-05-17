@@ -54,7 +54,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if($mail->send()) {
         header("Location: validar.php");
         exit();
-        echo 'Email enviado com sucesso';
+        
+        //echo 'Email enviado com sucesso';
 
       } else {
         echo 'Email nao enviado';
