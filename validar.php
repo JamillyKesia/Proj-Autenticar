@@ -27,10 +27,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 }
 ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validar Código</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <h1>Validar</h1>
 <!-- Formulário para inserir o código -->
 <form action="validar.php" method="post">
   <label for="codigoInserido">Insira o código:</label>
   <input type="text" name="codigoInserido" id="codigoInserido" required><br>
   <button type="submit">Verificar Código</button>
 </form>
+</body>
+</html>
