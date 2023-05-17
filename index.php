@@ -51,11 +51,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $mail->Body = 'Sua senha de acesso é <strong>'.$codigoAutenticador.'</strong>';
       $mail->AltBody = 'Chegou o email teste para 2 fatores';
     
-      if($mail->send()) {
-        echo 'Email enviado com sucesso';
-
+      if($mail->send()) 
         header('Location: validar.php');
         exit();
+        echo 'Email enviado com sucesso';
 
       } else {
         echo 'Email nao enviado';
