@@ -53,6 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
       if($mail->send()) {
         echo 'Email enviado com sucesso';
+
+        // metodo de encaminhamento de página por código PHP+HTML
         echo '<meta http-equiv="refresh" content="0;URL=\'validar.php\'" />';
         exit();
         
@@ -103,8 +105,8 @@ function gerarCodigoAleatorio() {
   </form>
   </section>
   <br>
-  LoginCorreto: UserTest
+  Login Correto: <strong>UserTest</strong>
   <br>
-  SenhaCorreta: senha123
+  Senha Correta: <strong>senha123</strong>
 </body>
 </html>
