@@ -83,6 +83,7 @@ function gerarCodigoAleatorio() {
 <html>
 <head>
   <title>Formulário de Acesso</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <h2>Acesso</h2><br>
