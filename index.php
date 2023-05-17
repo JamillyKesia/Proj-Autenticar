@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $mail->Port = 2525;
 
       // Configurações do servidor SMTP
-      $mail->setFrom('grouptest.dev.br');
+      $mail->setFrom('group.test@dev.br');
       //$mail->addAddress('Teste');
       $mail->addAddress($emailInserido);
     
