@@ -78,7 +78,6 @@ function gerarCodigoAleatorio() {
 
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -86,20 +85,24 @@ function gerarCodigoAleatorio() {
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <h2>Acesso</h2><br>
+  <section class="geral">
+  <h1>Acesso Lajanrão</h1>
+  <h2>Digite sua senha e seu login para ter acesso a plataforma Lajanrão.</h2><br>
   <form method="POST" action="">
-    <label for="email">Email:
-    <input type="email" id="email" name="email" required>
+    <label for="email">
+    <input type="email" id="email" name="email" class="inputForm" placeholder="E-mail" required>
     </label><br>
-    <label for="login">Login:
-      <input type="text" name="login" id="login">
+    <label for="login">
+      <input type="text" name="login" id="login" class="inputForm" placeholder="Login">
     </label><br>
-    <label for="senha">Senha:
-    <input type="password" id="senha" name="senha" required>
+    <label for="senha">
+    <input type="password" id="senha" name="senha" class="inputForm" placeholder="Senha"required>
     </label><br>
 
     <input type="submit" value="Entrar">
-  </form><br>
+  </form>
+  </section>
+  <br>
   LoginCorreto: UserTest
   <br>
   SenhaCorreta: senha123
