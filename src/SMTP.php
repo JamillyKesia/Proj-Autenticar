@@ -274,12 +274,12 @@ class SMTP
                 break;
             case 'html':
                 //Cleans up output a bit for a better looking, HTML-safe output
-                // echo gmdate('Y-m-d H:i:s'), ' ', htmlentities(
-                //     preg_replace('/[\r\n]+/', '', $str),
-                //     ENT_QUOTES,
-                //     'UTF-8'
-                // ), "<br>\n";
-                // break;
+                echo gmdate('Y-m-d H:i:s'), ' ', htmlentities(
+                    preg_replace('/[\r\n]+/', '', $str),
+                    ENT_QUOTES,
+                    'UTF-8'
+                ), "<br>\n";
+                break;
             case 'echo':
             default:
                 //Normalize line breaks

@@ -52,10 +52,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $mail->AltBody = 'Chegou o email teste para 2 fatores';
     
       if($mail->send()) {
-        header("Location: validar.php");
-        //exit();
-        
-        //echo 'Email enviado com sucesso';
+        echo 'Email enviado com sucesso';
+
+        header('Location: validar.php');
+        exit();
 
       } else {
         echo 'Email nao enviado';
