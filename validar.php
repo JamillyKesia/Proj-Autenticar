@@ -15,10 +15,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Verificar se o código inserido é igual ao código aleatório
   if ($codigoInserido == $codigoAutenticador) {
     echo "Código válido!"; // Código inserido está correto
+    echo '<meta http-equiv="refresh" content="0;URL=\'codigo-valido.html\'" />';
+    exit();
+
     
-    
-    header("Location: iupiii.html");
-        exit();
+    // header("Location: iupiii.html");
+    //     exit();
 
 } else {
     echo "Código inválido!"; // Código inserido está incorreto
