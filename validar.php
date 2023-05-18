@@ -2,7 +2,8 @@
 
 session_start();
 
-echo "Código gerado: " . $_SESSION['codigoAcesso'];
+// Exibe o código gerado para confirmação de teste
+// echo "Código gerado: " . $_SESSION['codigoAcesso'];
 
 // Verificar se o código foi enviado pelo formulário
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
