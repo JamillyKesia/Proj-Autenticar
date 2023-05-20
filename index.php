@@ -26,6 +26,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Gera um código randômico de 6 dígitos
     $codigoAutenticador = gerarCodigoAleatorio();
 
+    //valor recebido no reCaptcha
+    if(isset($_POST['g-recaptcha-response'])){
+      $captcha_data = $_POST['g-recaptcha-response'];
+    }
+    if(!$captcha_data) {
+      echo 'Por favor, inserir um código correto';
+      exit;
+    }
+
     // Armazenar o código na variável de sessão
     $_SESSION['codigoAcesso'] = $codigoAutenticador;
 
@@ -86,6 +95,7 @@ function gerarCodigoAleatorio() {
 <head>
   <title>Formulário de Acesso</title>
   <link rel="stylesheet" href="assets/styleHome.css">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   <section class="geral">
