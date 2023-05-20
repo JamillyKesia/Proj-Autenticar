@@ -5,11 +5,6 @@ Projeto para implementação de um sistema de autenticação de duplo fator (2FA
 
 
 
-## Referência
-
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- 
-
 ## Autores
 
 - [@Gabu](https://www.github.com/g4bh)
