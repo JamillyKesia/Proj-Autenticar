@@ -102,3 +102,9 @@ body{
 .sessaoDados strong{
     color: #7cb518;
 }
+
+.g-recaptcha{
+    margin: auto;
+    width: 305px;
+    margin-top: 27px;
+}
