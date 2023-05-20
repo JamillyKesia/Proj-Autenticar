@@ -101,7 +101,7 @@ function gerarCodigoAleatorio() {
     <label for="senha">
     <input type="password" id="senha" name="senha" class="inputForm" placeholder="Senha"required>
     </label><br>
-
+    <div class="g-recaptcha" data-sitekey="6LfLzx4mAAAAAGaA-zwo0t9ae-GXTKhAKu2ZdWfG"></div>
     <input type="submit" value="Entrar">
   </form>
   </section>
